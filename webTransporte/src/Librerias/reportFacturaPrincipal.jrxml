@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportFacturaPrincipal" pageWidth="612" pageHeight="1008" columnWidth="582" leftMargin="10" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="a9df9093-a434-4cd5-bb31-cebc8a2f24fe">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="conSPA"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\iosephus\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nroNit" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ciudad" class="java.lang.String"/>
+	<parameter name="pais" class="java.lang.String"/>
+	<parameter name="logo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["D:\\SPA\\webSPA\\src\\main\\webapp\\resources\\gfx\\logo360.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="empresa" class="java.lang.String"/>
+	<parameter name="qr" class="java.lang.String"/>
+	<parameter name="leyenda" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select 1]]>
+	</queryString>
+	<field name="?column?" class="java.lang.Integer"/>
+	<detail>
+		<band height="968" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<subreport>
+				<reportElement x="0" y="0" width="582" height="968" uuid="bb9983f7-d624-46ca-afa0-66e899cc72f0"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="nroNit">
+					<subreportParameterExpression><![CDATA[$P{nroNit}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ciudad">
+					<subreportParameterExpression><![CDATA[$P{ciudad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pais">
+					<subreportParameterExpression><![CDATA[$P{pais}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="empresa">
+					<subreportParameterExpression><![CDATA[$P{empresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="qr">
+					<subreportParameterExpression><![CDATA[$P{qr}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="leyenda">
+					<subreportParameterExpression><![CDATA[$P{leyenda}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "reportFactura.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="968">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<subreport>
+				<reportElement x="0" y="0" width="582" height="968" uuid="dc257d16-b03b-4aa8-ab8c-682badcab489"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="nroNit">
+					<subreportParameterExpression><![CDATA[$P{nroNit}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ciudad">
+					<subreportParameterExpression><![CDATA[$P{ciudad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pais">
+					<subreportParameterExpression><![CDATA[$P{pais}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="empresa">
+					<subreportParameterExpression><![CDATA[$P{empresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="qr">
+					<subreportParameterExpression><![CDATA[$P{qr}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="leyenda">
+					<subreportParameterExpression><![CDATA[$P{leyenda}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "reportFacturacopia.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
